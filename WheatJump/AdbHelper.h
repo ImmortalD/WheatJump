@@ -9,7 +9,7 @@ public:
 		this->m_pszAdbPath = pszAdbPath;
 	}
 
-	BOOL Exec(LPWSTR pszCommand);
+	BOOL Exec(LPWSTR pszCmdline, CString *szRet = NULL);
 
 	void SetAdbPath(LPWSTR pszAdbPath)
 	{
